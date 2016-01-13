@@ -1,0 +1,115 @@
+/*========= GENERAL ========*/
+body, .container {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+ul {
+	padding-left: 0;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+aside, article {
+	display: inline-block;
+	vertical-align: top;
+}
+
+aside, footer {
+	color: white;
+}
+/*========= END-GENERAL ========*/
+
+/*========= HEADER ========*/
+header {
+	width: 90%;
+	margin: auto;
+}
+header a {
+	color: #66757f;
+}
+
+.fa-twitter {
+	color: #55acee;
+}
+
+.languages {
+	position: relative;
+}
+
+.dropdown {
+	display: none;
+}
+/*========= END-HEADER ========*/
+
+/*========= SECTION ========*/
+.middle {
+	width: 100%;
+	/*background: url('https://abs.twimg.com/b/front_page/v1/EU_2.jpg') no-repeat;*/
+}
+
+section {
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+}
+
+aside {
+	width: 50%;
+}
+
+article {
+	width: 40%;
+}
+
+form {
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.connexion {
+	margin-bottom: 10px;
+	font-size: .75em;
+}
+
+input {
+	height: 30px;
+	border-radius: 5px;
+}
+
+.check {
+	vertical-align: middle;
+}
+/*========= END-SECTION ========*/
+
+/*========= FOOTER ========*/
+
+/*========= END-FOOTER ========*/
+footer {
+	width: 80%;
+	margin: auto;
+	font-size: .7em;
+}
+
+footer ul {
+	text-align-last: justify; 
+}
+/*========= PSEUDO-CLASSES ========*/
+header a:hover {
+	color: #55acee;
+}
+
+.languages:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0;
+}
+/*========= END-PSEUDO-CLASSES ========*/

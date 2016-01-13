@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ex Twitter</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
@@ -10,55 +11,69 @@
 			<header>
 				<nav>
 					<ul>
-						<li><a href="#">Accueil</a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i>Accueil</a></li>
 						<li><a href="#">&Agrave; propos</a></li>
-						<li><a href="#">Langue : français</a></li>
+						<li class="languages"><a href="#">Langue : français</a>
+							<ul class="dropdown">
+								<li><a href="#">English</a></li>
+								<li><a href="#">Espa&ntilde;ol</a></li>
+								<li><a href="#">Japonais</a></li>
+								<li><a href="#">Deutsch</a></li>
+								<li><a href="#">Italiano</a></li>
+								<li><a href="#">Suomi</a></li>
+								<li><a href="#">Norsk</a></li>
+								<li><a href="#">Nederlands</a></li>
+								<li><a href="#">Filipino</a></li>
+								<li><a href="#">Polski</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</header>
-			<section>
-				<aside>
-					<h1>Bienvenue sur Twitter.</h1>
-					<p>Connectez-vous à vos amis -- et d'autres personnes fascinantes. Recevez des mises à jour instantanées sur les choses qui vous intéressent. Et regardez les événements se dérouler, en temps réel, sous tous les angles.</p>
-				</aside>
-				<article>
-					<form method="post" action="#">
-						<fieldset>
+			<p><img src="https://abs.twimg.com/b/front_page/v1/EU_2.jpg"></p>
+			<div class="middle">
+				<section>
+					<aside>
+						<h1>Bienvenue sur Twitter.</h1>
+						<p>Connectez-vous à vos amis -- et d'autres personnes fascinantes. Recevez des mises à jour instantanées sur les choses qui vous intéressent. Et regardez les événements se dérouler, en temps réel, sous tous les angles.</p>
+					</aside>
+					<article>
+						<form method="post" action="#" class="connexion">
 							<p><input type="text" placeholder="Téléphone, email ou identifiant"></p>
 							<p><input type="password" placeholder="Mot de passe"></p>
 							<p><input type="submit" value="Connexion"></p>
-							<p><input type="checkbox"><label>Se souvenir de moi</label><span>.<a href="#">Mot de passe oublié ?</a></span></p>
-						</fieldset>
-						<fieldset>
+							<p><input type="checkbox" class="check"><label>Se souvenir de moi</label><span class="forget">.<a href="#">Mot de passe oublié ?</a></span></p>
+						</form>
+						<form method="post" action="#" class="subscription">
 							<p>Nouveau sur Twitter ? <span>Inscrivez-vous</span></p>
 							<p><input type="text" placeholder="Nom complet"></p>
 							<p><input type="email" placeholder="Adresse email"></p>
 							<p><input type="password" placeholder="Mot de passe"></p>
 							<p><input type="submit" value="S'inscrire sur Twitter"></p>
-						</fieldset>
-					</form>
-				</article>
-			</section>
-			<footer>
-				<ul>
-					<li><a href="#">&Agrave; propos</a></li>
-					<li><a href="#">Aide</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">&Eacute;tat du service</a></li>
-					<li><a href="#">Offres d'emploi</a></li>
-					<li><a href="#">Conditions</a></li>
-					<li><a href="#">Confidentialité</a></li>
-					<li><a href="#">Cookies</a></li>
-					<li><a href="#">Informations sur la publicité</a></li>
-					<li><a href="#">Marque</a></li>
-					<li><a href="#">Publicité</a></li>
-					<li><a href="#">Professionnels</a></li>
-					<li><a href="#">Médias</a></li>
-					<li><a href="#">Développeurs</a></li>
-					<li><a href="#">Annuaire</a></li>
-					<li><a href="#">&copy;2016 Twitter</a></li>
-				</ul>
-			</footer>
+						</form>
+					</article>
+				</section>
+				<footer>
+					<ul>
+						<li><a href="#">&Agrave; propos</a></li>
+						<li><a href="#">Aide</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">&Eacute;tat du service</a></li>
+						<li><a href="#">Offres d'emploi</a></li>
+						<li><a href="#">Conditions</a></li>
+						<li><a href="#">Confidentialité</a></li>
+						<li><a href="#">Cookies</a></li>
+						<li><a href="#">Informations sur la publicité</a></li>
+						<li><a href="#">Marque</a></li>
+						<li><a href="#">Publicité</a></li>
+						<li><a href="#">Professionnels</a></li>
+						<li><a href="#">Médias</a></li>
+						<li><a href="#">Développeurs</a></li>
+						<li><a href="#">Annuaire</a></li>
+						<li><a href="#">&copy;2016 Twitter</a></li>
+					</ul>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
