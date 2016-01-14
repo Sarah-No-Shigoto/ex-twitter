@@ -224,7 +224,7 @@ header a:hover {
 	left: 0;
 }
 
-input:focus {
+.connexion p:first-child input:focus, .connexion p:nth-child(2) input:focus, .subscription p:not(:last-child) input:focus {
 	box-shadow: 2px 2px 5px #55acee;
 }
 
