@@ -93,24 +93,19 @@ aside p {
 	line-height: 1.6;
 }
 
-.content {
-	position: absolute;
-	animation: slider 5s ease infinite;
+.slide-content {
+	position: absolute;	
+	animation: slider 10s ease infinite;
 }
 
 .bg-img {
-	width: 100%; 
-	overflow: hidden;
+	position: relative;
 }
 
-.content li {
+.slide-content li {
 	width: 100%;
 	display: inline;
-}
-
-img {
-	width: 100%;
-	height: 100%;
+	
 }
 
 section {
@@ -261,19 +256,19 @@ header a:hover {
 		left:100%;
 	}
 	30% {
-		left: 200%;
+		left: -200%;
 	}
 	45% {
-		left: 300%;
+		left: -300%;
 	}
 	60% {
-		left: 400%
+		left: -400%;
 	}
 	75% {
-		left: 500%;
+		left: -500%;
 	}
 	100% {
-		left: 600%;
+		left: -600%;
 	}
 
 }
