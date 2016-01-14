@@ -1,11 +1,13 @@
 /*========= GENERAL ========*/
-body, .container {
+body, .container, p {
 	margin: 0;
 	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
 ul {
 	padding-left: 0;
+	margin: 0;
 }
 
 li {
@@ -25,23 +27,42 @@ aside, article {
 aside, footer {
 	color: white;
 }
+
 /*========= END-GENERAL ========*/
 
 /*========= HEADER ========*/
 header {
 	width: 90%;
+	height: 47px;
 	margin: auto;
+	position: relative;
 }
-header a {
+
+header nav {
+	padding-top: 15px;
+}
+
+header a, .fa-caret-down {
 	color: #66757f;
+	font-size: .8em;
+}
+
+.fa-caret-down {
+	margin-left: 5px;
+}
+
+header li:not(:last-child) {
+	margin-right: 30px;
 }
 
 .fa-twitter {
 	color: #55acee;
+	font-size: 1.5em;
 }
 
 .languages {
-	position: relative;
+	position: absolute;
+	right: 0;
 }
 
 .dropdown {
@@ -52,7 +73,16 @@ header a {
 /*========= SECTION ========*/
 .middle {
 	width: 100%;
-	/*background: url('https://abs.twimg.com/b/front_page/v1/EU_2.jpg') no-repeat;*/
+	position: absolute;
+	top: 47px;
+}
+
+.bg-img {
+	width: 100%;
+}
+
+img {
+	width: 100%;
 }
 
 section {
@@ -78,11 +108,57 @@ form {
 .connexion {
 	margin-bottom: 10px;
 	font-size: .75em;
+
+}
+
+.connexion p:first-child input {
+	width: 100%;
+}
+
+.forget {
+	color: #008fcd;
+}
+
+.connexion p:nth-child(2), .connexion p:nth-child(3) {
+	display: inline-block;
+}
+
+.connect {
+	background-color: #55acee;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #3b88c3;
 }
 
 input {
 	height: 30px;
 	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+.subscription p:first-child {
+	border-bottom: 1px solid #e1e8ed;
+	margin-bottom: 10px;
+}
+
+.subscription span {
+	color: #66757f;
+}
+
+.subscription p:last-child {
+	text-align: right;
+}
+
+.subscription p:not(:last-child) input {
+	width: 100%;
+}
+
+.subscribe {
+	color: #292f33;
+	background-color: #fcc545;
+	border: 1px solid #ec8b11;
+	font-weight: bold;
+	text-shadow: 0 1px 2px white;
 }
 
 .check {
@@ -102,14 +178,33 @@ footer {
 footer ul {
 	text-align-last: justify; 
 }
+
+footer a {
+	color: white;
+}
 /*========= PSEUDO-CLASSES ========*/
 header a:hover {
 	color: #55acee;
 }
 
-.languages:hover .dropdown {
+.languages:hover {
+	text-decoration: underline;
+}
+.languages:active .dropdown {
 	display: block;
 	position: absolute;
 	left: 0;
+}
+
+.forget:hover {
+	text-decoration: underline;
+}
+
+.connect:hover {
+	background-color: #4d9bd7;
+}
+
+.subscribe:hover {
+	background-image: linear-gradient(#fdc748, #f0a322);
 }
 /*========= END-PSEUDO-CLASSES ========*/
