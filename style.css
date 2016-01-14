@@ -217,10 +217,15 @@ header a:hover {
 .languages:hover {
 	text-decoration: underline;
 }
+
 .languages:active .dropdown {
 	display: block;
 	position: absolute;
 	left: 0;
+}
+
+input:focus {
+	box-shadow: 2px 2px 5px #55acee;
 }
 
 .forget:hover {
