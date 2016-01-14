@@ -76,6 +76,7 @@ header li:not(:last-child) {
 /*========= END-HEADER ========*/
 
 /*========= SECTION ========*/
+
 .middle {
 	width: 100%;
 	position: absolute;
@@ -92,13 +93,24 @@ aside p {
 	line-height: 1.6;
 }
 
+.content {
+	position: absolute;
+	animation: slider 5s ease infinite;
+}
+
 .bg-img {
+	width: 100%; 
+	overflow: hidden;
+}
+
+.content li {
 	width: 100%;
-	position: fixed; 
+	display: inline;
 }
 
 img {
 	width: 100%;
+	height: 100%;
 }
 
 section {
@@ -238,5 +250,31 @@ header a:hover {
 
 .subscribe:hover {
 	background-image: linear-gradient(#fdc748, #f0a322);
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+
+	15% {
+		left:100%;
+	}
+	30% {
+		left: 200%;
+	}
+	45% {
+		left: 300%;
+	}
+	60% {
+		left: 400%
+	}
+	75% {
+		left: 500%;
+	}
+	100% {
+		left: 600%;
+	}
+
 }
 /*========= END-PSEUDO-CLASSES ========*/
